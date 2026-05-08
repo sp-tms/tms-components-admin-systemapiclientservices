@@ -1,0 +1,72 @@
+{
+	"name" : "Api Client Services",
+	"route" : "system/api/client/services",
+	"description" : "List Api client services via this component",
+	"module_type" : "components",
+	"app_type" : "tms",
+	"category" : "admin",
+	"version" : "0.0.0",
+	"repo" : "https://github.com/sp-tms/tms-components-admin-systemapiclientservices",
+	"class" : "Apps\\Tms\\Components\\System\\Api\\Client\\Services\\ServicesComponent",
+	"dependencies" : 
+	{
+		"core" : 
+		{
+			"name" : "Core",
+			"version" : "0.0.0-rc.15",
+			"repo" : "https://github.com/sp-framework/core"
+		},
+		"components" : [],
+		"packages" : [],
+		"middlewares" : [],
+		"views" : [],
+		"external" : [],
+		"externals" : [],
+		"apptype" : 
+		{
+			"name" : "Transport Management System",
+			"version" : "0.0.0",
+			"repo" : "https://github.com/sp-tms/tms"
+		}
+	},
+	"menu" : 
+	{
+		"seq" : 7,
+		"system" : 
+		{
+			"icon" : "cogs",
+			"title" : "system",
+			"childs" : 
+			{
+				"api" : 
+				{
+					"title" : "api",
+					"icon" : "exchange-alt",
+					"childs" : 
+					{
+						"client" : 
+						{
+							"title" : "client",
+							"childs" : 
+							{
+								"services" : 
+								{
+									"title" : "services",
+									"link" : "system/api/client/services"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"widgets" : [],
+	"settings" : 
+	{
+		"mandatory" : 
+		{
+			"core" : true
+		}
+	}
+}
